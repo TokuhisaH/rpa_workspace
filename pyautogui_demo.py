@@ -1,4 +1,5 @@
 import pyautogui as pag
+from time import sleep
 
 #画面のサイズ取得、原点は左上
 #print("画面サイズ",pag.size())
@@ -23,5 +24,6 @@ try:
     while True:
         m_posi_x,m_posi_y = pag.position()
         print("現在のマウス位置 x:",m_posi_x,"y:",m_posi_y)
+        sleep(1)
 except KeyboardInterrupt:
     print("\n")
