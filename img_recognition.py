@@ -6,5 +6,6 @@ import pyautogui as pag
 # img=pag.screenshot("screenshot.png",region=(0,0,500,500))
 
 #画像認識機能による物体検出
+#()内の画像がある範囲を教えてくれる。見つからないとNoneが返ってくる
 icon_loc=pag.locateOnScreen("icon.PNG")
 print(icon_loc)
